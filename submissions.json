@@ -1,4 +1,22 @@
 {
+  "CF163014082": {
+    "contest_id": 525,
+    "language": "GNU C++14",
+    "path": "codeforces\\525\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Vitaliy and Pie",
+    "problem_url": "https://codeforces.com/contest/525/problem/A",
+    "submission_id": "CF163014082",
+    "submission_url": "https://codeforces.com/contest/525/submission/163014082",
+    "tags": [
+      "greedy",
+      "hashing",
+      "strings",
+      "*1100"
+    ],
+    "timestamp": "Jul/06/2022 20:00"
+  },
   "CF164419756": {
     "contest_id": 1462,
     "language": "GNU C++14",
