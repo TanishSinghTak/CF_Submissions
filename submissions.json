@@ -1,4 +1,21 @@
 {
+  "CF164532245": {
+    "contest_id": 474,
+    "language": "GNU C++14",
+    "path": "codeforces\\474\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Worms",
+    "problem_url": "https://codeforces.com/contest/474/problem/B",
+    "submission_id": "CF164532245",
+    "submission_url": "https://codeforces.com/contest/474/submission/164532245",
+    "tags": [
+      "binary search",
+      "implementation",
+      "*1200"
+    ],
+    "timestamp": "Jul/16/2022 23:04"
+  },
   "CF164534409": {
     "contest_id": 230,
     "language": "GNU C++14",
