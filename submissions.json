@@ -1,4 +1,25 @@
 {
+  "CF168941792": {
+    "contest_id": 1720,
+    "language": "GNU C++14",
+    "path": "codeforces\\1720\\D1.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D1",
+    "problem_name": "Xor-Subsequence (easy version)",
+    "problem_url": "https://codeforces.com/contest/1720/problem/D1",
+    "submission_id": "CF168941792",
+    "submission_url": "https://codeforces.com/contest/1720/submission/168941792",
+    "tags": [
+      "bitmasks",
+      "brute force",
+      "dp",
+      "strings",
+      "trees",
+      "two pointers",
+      "*1800"
+    ],
+    "timestamp": "Aug/19/2022 14:16"
+  },
   "CF169246982": {
     "contest_id": 1715,
     "language": "GNU C++14",
