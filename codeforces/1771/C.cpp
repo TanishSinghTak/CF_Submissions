@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long
-const int N = 32000;
+const int N = 35000;
 vector<long long> isprime(N,1);
 vector<long long> primes;
 void sieve(){
@@ -30,8 +30,6 @@ vector<long long> getPrimeFactors(int a) {
 
     return f;
 }
-
-
 signed main(){
     sieve();
     long long t;
