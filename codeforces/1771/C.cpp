@@ -18,7 +18,7 @@ void sieve(){
 vector<long long> getPrimeFactors(int a) {
     vector<long long> f;
     for (auto p : primes) {
-        if (p*p > a) break;
+        if (p > a) break;
         if (a % p == 0) {
             f.push_back(p);
             do {
