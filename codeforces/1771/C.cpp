@@ -30,6 +30,8 @@ vector<long long> getPrimeFactors(int a) {
 
     return f;
 }
+
+
 signed main(){
     sieve();
     long long t;
