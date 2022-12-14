@@ -1,128 +1,80 @@
 #include<bits/stdc++.h>
+
 using namespace std;
-#define Fast_io ios_base::sync_with_stdio(false);cin.tie(nullptr);cout.tie(nullptr);
-#define endl '\n'     //Comment out if interactive
-#define int long long // comment if Space limit exceeds
-const int N = 1e7+10; //change to 32000 if TLE happens for prime factors
-const int mod = 1e9 +7; 
-int isprime[N]; // for sieve
-vector<int> primes; // for storing primes
-vector<int> vis(N,0); // visited array
-int parent[N]; // for DSU change it accordingly for something else
-int size[N]; // for DSU change it accordingly for something else
-map<int,int> size_map; // for kruskal 
-int fact[N]; // factorial array
 
+#define fore(i, l, r) for(int i = int(l); i < int(r); i++)
+#define sz(a) int((a).size())
 
+typedef long long li;
 
-// binary multiply with mod
-int binMultiply(long long a, long long b,long long m){
-    int ans =0;
-    while(b){
-        if(b&1){
-            ans = (ans + a)%m;
-        }
-        a = (a +a)%m;
-        b >>= 1;
-    }
-    return ans;
+const int INF = int(1e9);
+const int N = int(1e7) + 5;
+
+int mind[N];
+
+void precalc() {
+	fore (i, 0, N)
+		mind[i] = i;
+	
+	for (int p = 2; p < N; p++) {
+		if (mind[p] != p)
+			continue;
+		for (int d = 2 * p; d < N; d += p)
+			mind[d] = min(mind[d], p);
+	}
 }
 
-//binary exponentiation with mod
-int binexp(long long a, long long b, long long m){
-    int ans =1;
-    while(b){
-        if(b&1){
-            ans = binMultiply(ans,a,m)%m;
-        }
-        a = binMultiply(a,a,m)%m;
-        b >>= 1;
-    }
-    return ans;
+int x, y;
+
+inline bool read() {
+	if(!(cin >> x >> y))
+		return false;
+	return true;
 }
 
-//Factorial Pre-compute
-void factorial(long long m){
-    fact[0] = 1;
-    for(int i = 0; i<N; i++){
-        fact[i] = (fact[i-1]*1LL*i)%m;
-    }
+vector<int> getPrimes(int v) {
+	vector<int> ps;
+	while (v > 1) {
+		if (ps.empty() || ps.back() != mind[v])
+			ps.push_back(mind[v]);
+		v /= mind[v];
+	}
+	return ps;
 }
 
-// Modulo multiplicative inverse MMI
-// (A^-1)%m = (A^(m-2))%m
-int moduloinverse(long long x , long long m){
-    return binexp(x,m-2,m);
+inline void solve() {
+	int d = y - x;
+	if (d == 1) {
+		cout << -1 << '\n';
+		return;
+	}
+	
+	int r = INF;
+	for (int p : getPrimes(d))
+		r = min(r, ((x + p - 1) / p) * p);
+	cout << r - x << '\n';
 }
 
-
-int nCr(long long n, long long r, long long m){
-    int num = fact[n];//numerator
-    int den = (fact[n-r]*1LL*fact[r])%m; // denominator
-    int ans = (num*1LL*moduloinverse(den,m))%m; // using MMI for denominator
-    return ans;
+int main() {
+#ifdef _DEBUG
+	freopen("input.txt", "r", stdin);
+	int tt = clock();
+#endif
+	ios_base::sync_with_stdio(false);
+	cin.tie(0), cout.tie(0);
+	cout << fixed << setprecision(15);
+	
+	precalc();
+	
+	int t; cin >> t;
+	while (t--) {
+		read();
+		solve();
+		
+#ifdef _DEBUG
+		cerr << "TIME = " << clock() - tt << endl;
+		tt = clock();
+#endif
+	}
+	return 0;
 }
-
-
-// Sieve Algorithm
-void sieve(){
-    for(int  i = 0; i<N; i++){
-        isprime[i] = i;
-    }
-    for(int i=2;i<N; i++){
-        if(isprime[i] != i){
-            continue;}
-        for(int j = 2*i ; j<N; j+=i){
-            isprime[j] = min(isprime[j], i);
-        }
-        primes.push_back(i);
-    }
-}
-
-
-// Function for prime factors
-vector<int> getPrimeFactors(int a) {
-    vector<int> f;
-    while(a>1){
-        if(f.empty()||f.back() != isprime[a])
-            f.push_back(isprime[a]);
-        a/=isprime[a];
-    }
-    return f;
-}
-
-/////----------------------------Main Function---------------------------------/////
-
-
-signed main() {
-
-    Fast_io;
-    // cout.precision(30);
-    sieve();
-    int t;
-    cin>>t;
-    while(t--){
-        int a,b;
-        cin>>a>>b;
-        if(__gcd(a,b) != 1){
-            cout<<0<<endl;
-        }
-        else if((b-a)%2 == 0){
-            cout<<1<<endl;
-        }
-        else if(b-a == 1){
-            cout<<-1<<endl;
-        }
-        else{
-            int x = b-a;
-            long long ans = 1e7+10;
-            for(auto f : getPrimeFactors(x)){
-                ans =  min(ans, f*1LL*((a/f) +1));
-            }
-            cout<< ans -a <<endl;
-        }
-    }
-
-    return 0;
-}
-
