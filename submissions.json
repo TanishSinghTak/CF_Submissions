@@ -1,4 +1,22 @@
 {
+  "CF185498624": {
+    "contest_id": 1767,
+    "language": "GNU C++14",
+    "path": "codeforces\\1767\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Block Towers",
+    "problem_url": "https://codeforces.com/contest/1767/problem/B",
+    "submission_id": "CF185498624",
+    "submission_url": "https://codeforces.com/contest/1767/submission/185498624",
+    "tags": [
+      "data structures",
+      "greedy",
+      "sortings",
+      "*800"
+    ],
+    "timestamp": "Dec/16/2022 20:40"
+  },
   "CF185524559": {
     "contest_id": 1767,
     "language": "GNU C++14",
