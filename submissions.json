@@ -1,4 +1,22 @@
 {
+  "CF185717253": {
+    "contest_id": 1774,
+    "language": "GNU C++14",
+    "path": "codeforces\\1774\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Ice and Fire",
+    "problem_url": "https://codeforces.com/contest/1774/problem/C",
+    "submission_id": "CF185717253",
+    "submission_url": "https://codeforces.com/contest/1774/submission/185717253",
+    "tags": [
+      "constructive algorithms",
+      "dp",
+      "greedy",
+      "*1300"
+    ],
+    "timestamp": "Dec/18/2022 00:07"
+  },
   "CF185780669": {
     "contest_id": 1774,
     "language": "GNU C++14",
