@@ -1,4 +1,22 @@
 {
+  "CF185780669": {
+    "contest_id": 1774,
+    "language": "GNU C++14",
+    "path": "codeforces\\1774\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Coloring",
+    "problem_url": "https://codeforces.com/contest/1774/problem/B",
+    "submission_id": "CF185780669",
+    "submission_url": "https://codeforces.com/contest/1774/submission/185780669",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "math",
+      "*1500"
+    ],
+    "timestamp": "Dec/18/2022 16:58"
+  },
   "CF185815409": {
     "contest_id": 1772,
     "language": "GNU C++14",
