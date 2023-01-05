@@ -1,4 +1,23 @@
 {
+  "CF188115859": {
+    "contest_id": 1768,
+    "language": "GNU C++14",
+    "path": "codeforces\\1768\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Elemental Decompress",
+    "problem_url": "https://codeforces.com/contest/1768/problem/C",
+    "submission_id": "CF188115859",
+    "submission_url": "https://codeforces.com/contest/1768/submission/188115859",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "implementation",
+      "sortings",
+      "*1300"
+    ],
+    "timestamp": "Jan/05/2023 21:52"
+  },
   "CF188716566": {
     "contest_id": 1775,
     "language": "GNU C++14",
