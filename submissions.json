@@ -1,4 +1,22 @@
 {
+  "CF189309771": {
+    "contest_id": 1782,
+    "language": "GNU C++14",
+    "path": "codeforces\\1782\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Parallel Projection",
+    "problem_url": "https://codeforces.com/contest/1782/problem/A",
+    "submission_id": "CF189309771",
+    "submission_url": "https://codeforces.com/contest/1782/submission/189309771",
+    "tags": [
+      "geometry",
+      "greedy",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Jan/15/2023 17:43"
+  },
   "CF189321446": {
     "contest_id": 1782,
     "language": "GNU C++14",
