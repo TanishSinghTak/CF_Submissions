@@ -1459,6 +1459,24 @@
     ],
     "timestamp": "Feb/17/2023 20:21"
   },
+  "CF200301087": {
+    "contest_id": 1810,
+    "language": "GNU C++14",
+    "path": "codeforces\\1810\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Candies",
+    "problem_url": "https://codeforces.com/contest/1810/problem/B",
+    "submission_id": "CF200301087",
+    "submission_url": "https://codeforces.com/contest/1810/submission/200301087",
+    "tags": [
+      "constructive algorithms",
+      "math",
+      "number theory",
+      "*800"
+    ],
+    "timestamp": "Apr/02/2023 01:28"
+  },
   "CF200301114": {
     "contest_id": 1810,
     "language": "GNU C++14",
