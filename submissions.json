@@ -1459,6 +1459,24 @@
     ],
     "timestamp": "Feb/17/2023 20:21"
   },
+  "CF200300940": {
+    "contest_id": 1791,
+    "language": "GNU C++14",
+    "path": "codeforces\\1791\\E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Negatives and Positives",
+    "problem_url": "https://codeforces.com/contest/1791/problem/E",
+    "submission_id": "CF200300940",
+    "submission_url": "https://codeforces.com/contest/1791/submission/200300940",
+    "tags": [
+      "dp",
+      "greedy",
+      "sortings",
+      "*1100"
+    ],
+    "timestamp": "Apr/02/2023 01:26"
+  },
   "CF200300960": {
     "contest_id": 1791,
     "language": "GNU C++14",
