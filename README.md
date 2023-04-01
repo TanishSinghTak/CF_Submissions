@@ -12,8 +12,9 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-80 | [A - Beautiful Sequence](https://codeforces.com/contest/1810/problem/A) | [GNU C++14](./codeforces/1810/A.cpp) | `brute force` `greedy` `*800` | Apr/02/2023 01:28 | 
-79 | [B - Candies](https://codeforces.com/contest/1810/problem/B) | [GNU C++14](./codeforces/1810/B.cpp) | `constructive algorithms` `math` `number theory` `*800` | Apr/02/2023 01:28 | 
+81 | [A - Beautiful Sequence](https://codeforces.com/contest/1810/problem/A) | [GNU C++14](./codeforces/1810/A.cpp) | `brute force` `greedy` `*800` | Apr/02/2023 01:28 | 
+80 | [B - Candies](https://codeforces.com/contest/1810/problem/B) | [GNU C++14](./codeforces/1810/B.cpp) | `constructive algorithms` `math` `number theory` `*800` | Apr/02/2023 01:28 | 
+79 | [C - Make It Permutation](https://codeforces.com/contest/1810/problem/C) | [GNU C++14](./codeforces/1810/C.cpp) | `brute force` `greedy` `sortings` `*1300` | Apr/02/2023 01:28 | 
 78 | [D - Triangle Coloring](https://codeforces.com/contest/1795/problem/D) | [GNU C++14](./codeforces/1795/D.cpp) | `combinatorics` `math` | Feb/17/2023 20:21 | 
 77 | [B - Stand-up Comedian](https://codeforces.com/contest/1792/problem/B) | [GNU C++14](./codeforces/1792/B.cpp) | `greedy` `math` `*1200` | Jan/24/2023 22:20 | 
 76 | [C - Equal Frequencies](https://codeforces.com/contest/1782/problem/C) | [GNU C++14](./codeforces/1782/C.cpp) | `brute force` `constructive algorithms` `greedy` `implementation` `sortings` `strings` `*1600` | Jan/18/2023 19:09 | 
